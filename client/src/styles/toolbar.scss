@@ -1,0 +1,68 @@
+@import "variables";
+
+.toolbar, .settings {
+  height: $toolbar-height;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 21px;
+
+  &__buttons, &__options {
+    width: 226px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .btn {
+      height: 25px;
+      width: 25px;
+      border: none;
+      cursor: pointer;
+      -webkit-background-size: cover;
+      background-size: cover;
+
+      &.brush {
+        background: url("../assets/image/brush.png") center center no-repeat;
+      }
+
+      &.rect {
+        background: url("../assets/image/rect.png") center center no-repeat;
+      }
+
+      &.circle {
+        background: url("../assets/image/circle.png") center center no-repeat;
+      }
+
+      &.eraser {
+        background: url("../assets/image/eraser.png") center center no-repeat;
+      }
+
+      &.line {
+        background: url("../assets/image/line.png") center center no-repeat;
+      }
+
+      &.save {
+        background: url("../assets/image/save.png") center center no-repeat;
+      }
+
+      &.undo {
+        background: url("../assets/image/undo.png") center center no-repeat;
+      }
+
+      &.redo {
+        background: url("../assets/image/redo.png") center center no-repeat;
+      }
+    }
+  }
+
+  &__options {
+    width: 100px;
+  }
+}
+
+.settings {
+  z-index: 1;
+}
